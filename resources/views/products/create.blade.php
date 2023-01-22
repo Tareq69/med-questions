@@ -7,25 +7,8 @@
     <div id="app">
         <create-product :variants="{{ $variants }}">Loading</create-product>
     </div>
-<<<<<<< HEAD
 @endsection
 
 
-=======
-@endsection
-
-@section('page_js')
-
-<script type="text/javacript" src="{{ asset('js/product.js') }}"></script>
-
-@endsection
-
-@push('page_js')
-
-    <script type="text/javascript" src="{{ asset('js/product.js') }}"></script>
-    <!-- <script src={{}}></script> -->
-   
-@endpush
->>>>>>> 6e23104165a936da927245445ca454844c921155
 <!-- 
 
