@@ -191,7 +191,6 @@ export default {
                 product_variant_prices: this.product_variant_prices
             }
 
-<<<<<<< HEAD
             axios({
                 method: 'post',
                 url: '/product',
@@ -199,11 +198,6 @@ export default {
                 validateStatus: (status) => {
                     return true; // 
                 },
-=======
-
-            axios.post('/add-product', product).then(response => {
-                console.log(response.data);
->>>>>>> 6e23104165a936da927245445ca454844c921155
             }).catch(error => {
                 console.log(error.message);
             }).then(response => {

@@ -90,11 +90,7 @@
                                 </td>
                                 <td>
                                     <div class="btn-group btn-group-sm">
-<<<<<<< HEAD
                                         <a href="/product/{{$product->id}}/edit" class="btn btn-success">Edit</a>
-=======
-                                        <a href="{{ route('product.edit', 1) }}" class="btn btn-success">Edit</a>
->>>>>>> 6e23104165a936da927245445ca454844c921155
                                     </div>
                                 </td>
                             </tr>
