@@ -45,6 +45,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+<<<<<<< HEAD
 
         try{
             $request->validate([
@@ -66,6 +67,9 @@ class ProductController extends Controller
             return response()->json($e->getMessage(), Response::HTTP_INTERNAL_SERVER_ERROR);
         }
         
+=======
+        dd($request);
+>>>>>>> 6e23104165a936da927245445ca454844c921155
     }
     
 
