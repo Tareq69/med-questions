@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,7 +22,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/dropzone', 'HomeController@index')->name('file-upload');
-
+Route::post('/product-filter',[ProductController::class,'filter']);
 Route::middleware('auth')->group(function () {
     Route::resource('product-variant', 'VariantController');
     Route::resource('product', 'ProductController');
